@@ -73,7 +73,7 @@ public class DayTwoTest implements DayTest {
     }
 
     private boolean isSafe(List<Integer> list) {
-        logger.info("processing list {}", StringUtils.join(list, "|"));
+        logger.debug("processing list {}", StringUtils.join(list, "|"));
         // doesn't move so stop here
         if (list.getFirst().compareTo(list.getLast()) == 0) {
             return false;
@@ -91,9 +91,9 @@ public class DayTwoTest implements DayTest {
             int diff = incrementing ? next - current : current - next;
             if (diff < 1 || diff > 3) {
                 if (diff == 0) {
-                    logger.info("same values in list at {} and {} - {}", value, value + 1, StringUtils.join(list, "|"));
+                    logger.debug("same values in list at {} and {} - {}", value, value + 1, StringUtils.join(list, "|"));
                 }
-                logger.info("List {} is not safe",
+                logger.debug("List {} is not safe",
                         StringUtils.join(list, "|"));
                 return false;
             }
