@@ -1,3 +1,5 @@
+[![Java CI with Maven](https://github.com/matbroughty/advent24/actions/workflows/maven.yml/badge.svg)](https://github.com/matbroughty/advent24/actions/workflows/maven.yml)
+
 # Advent of Code 2024
 
 [Advent Of Code](https://adventofcode.com/2024/)
